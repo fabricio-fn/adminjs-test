@@ -10,6 +10,9 @@ const database = new Sequelize({
   host: process.env.DATABASE_HOST as string,
   database: process.env.DATABASE_NAME as string,
   port: parseInt(process.env.DATABASE_PORT as string, 10),
+  define: {
+    freezeTableName: true,
+  },
 });
 
 export default database;
