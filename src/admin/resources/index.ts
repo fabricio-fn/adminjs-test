@@ -4,7 +4,7 @@ import { Menu } from '../../db/models/Menu.js';
 import { Category } from '../../db/models/Category.js';
 
 import { categoryResourceOptions } from './category.js';
-import { menuResourceOptions } from './menu.js';
+import { menuResourceFeatures, menuResourceOptions } from './menu.js';
 
 export const adminJsResources: ResourceWithOptions[] = [
   {
@@ -14,5 +14,6 @@ export const adminJsResources: ResourceWithOptions[] = [
   {
     resource: Menu,
     options: menuResourceOptions,
+    features: menuResourceFeatures,
   },
 ];
