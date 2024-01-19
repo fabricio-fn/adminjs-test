@@ -8,16 +8,18 @@
     "dev": "dotenv -c '.env' -- node dist/server"
   },
   "dependencies": {
-    "adminjs": "^7.4.1",
     "@adminjs/express": "^6.1.0",
+    "@adminjs/sequelize": "^4.0.0",
+    "@adminjs/upload": "^4.0.2",
+    "adminjs": "^7.4.1",
     "express": "^4.18.2",
     "express-formidable": "^1.2.0",
     "express-session": "^1.17.3",
-    "@adminjs/sequelize": "^4.0.0",
-    "sequelize": ">=6",
-    "pg": "latest"
+    "pg": "latest",
+    "sequelize": ">=6"
   },
   "devDependencies": {
+    "@types/express": "^4.17.17",
     "@types/node": "^18.15.11",
     "@typescript-eslint/eslint-plugin": "^5.58.0",
     "@typescript-eslint/parser": "^5.58.0",
@@ -30,10 +32,9 @@
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "prettier": "^3.1.0",
-    "typescript": "^5.0.4",
-    "@types/express": "^4.17.17",
+    "sequelize-cli": "^6.6.2",
     "tslib": "^2.5.0",
-    "sequelize-cli": "^6.6.2"
+    "typescript": "^5.0.4"
   },
   "name": "adminjs-test"
 }
