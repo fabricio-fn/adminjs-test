@@ -5,6 +5,7 @@ import { buildAuthenticatedRouter } from '@adminjs/express';
 import provider from './admin/auth-provider.js';
 import options from './admin/options.js';
 import initializeDb from './db/index.js';
+import { routes } from './routes.js';
 
 const port = process.env.PORT || 3000;
 
@@ -37,6 +38,8 @@ const start = async () => {
   );
 
   app.use(admin.options.rootPath, router);
+
+  app.use(routes);
 
   app.listen(port, () => {
     console.log(`AdminJS available at http://localhost:${port}${admin.options.rootPath}`);
