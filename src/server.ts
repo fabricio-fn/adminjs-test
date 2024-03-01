@@ -37,6 +37,8 @@ const start = async () => {
     },
   );
 
+  app.use(express.json());
+
   app.use(admin.options.rootPath, router);
 
   app.use(routes);
