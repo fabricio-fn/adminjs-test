@@ -12,6 +12,7 @@ routes.post('/auth/login', authController.login);
 routes.get('/categories', categoriesController.index);
 routes.get('/categories/:id', categoriesController.show);
 
+routes.get('/menu/featured', menuController.featured);
 routes.get('/menu/:id', menuController.show);
 
 export { routes };

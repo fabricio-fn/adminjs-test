@@ -12,4 +12,17 @@ export const menuService = {
 
     return menu;
   },
+
+  getRandomFeaturedMenu: async () => {
+    const featuredMenu = await Menu.findAll({
+      attributes: ['id', 'name', 'description', 'thumbnailUrl', 'featured'],
+      where: {
+        featured: true,
+      },
+    });
+
+    const randomFeaturedMenu = featuredMenu.sort(() => 0.5 - Math.random());
+
+    return randomFeaturedMenu.slice(0, 6);
+  },
 };
