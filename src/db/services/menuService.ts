@@ -25,4 +25,14 @@ export const menuService = {
 
     return randomFeaturedMenu.slice(0, 6);
   },
+
+  getTopSixNewest: async () => {
+    const menu = await Menu.findAll({
+      limit: 6,
+      order: [['createdAt', 'DESC']],
+      attributes: ['id', 'name', 'description', 'thumbnailUrl', 'featured'],
+    });
+
+    return menu;
+  },
 };
