@@ -20,5 +20,6 @@ routes.get('/menu/:id', menuController.show);
 
 routes.get('/users/current', ensureAuth, usersController.show);
 routes.put('/users/current', ensureAuth, usersController.update);
+routes.put('/users/current/password', ensureAuth, usersController.updatePassword);
 
 export { routes };
