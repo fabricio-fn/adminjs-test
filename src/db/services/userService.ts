@@ -16,4 +16,36 @@ export const userService = {
     const user = await User.create(attributes);
     return user;
   },
+
+  update: async (
+    id: string | number,
+    values: {
+      firstName?: string;
+      lastName?: string;
+      phone?: string;
+      birth?: Date;
+      email?: string;
+    },
+  ) => {
+    const {
+      firstName,
+      lastName,
+      phone,
+      birth,
+      email,
+    } = values;
+
+    const [affectedRows, updatedUsers] = await User.update({
+      firstName,
+      lastName,
+      phone,
+      birth,
+      email,
+    }, {
+      where: { id },
+      returning: true,
+    });
+
+    return updatedUsers[0];
+  },
 };
