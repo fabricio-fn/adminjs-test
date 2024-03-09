@@ -1,6 +1,7 @@
 import express from 'express';
 import AdminJS from 'adminjs';
 import { buildAuthenticatedRouter } from '@adminjs/express';
+import cors from 'cors';
 
 import provider from './admin/auth-provider.js';
 import options from './admin/options.js';
@@ -11,6 +12,8 @@ const port = process.env.PORT || 3000;
 
 const start = async () => {
   const app = express();
+
+  app.use(cors());
 
   await initializeDb();
 
