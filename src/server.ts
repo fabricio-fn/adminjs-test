@@ -28,7 +28,7 @@ const start = async () => {
   const router = buildAuthenticatedRouter(
     admin,
     {
-      cookiePassword: process.env.COOKIE_SECRET,
+      cookiePassword: process.env.COOKIE_SECRET as string,
       cookieName: 'adminjs',
       provider,
     },
