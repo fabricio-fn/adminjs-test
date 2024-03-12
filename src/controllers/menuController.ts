@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
 
-import { menuService } from '../db/services/menuService.js';
+import { menuService } from '../db/services/menuService.ts';
 
 export const menuController = {
   featured: async (req: Request, res: Response) => {

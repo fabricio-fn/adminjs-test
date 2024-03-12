@@ -1,9 +1,9 @@
 import { AdminJSOptions } from 'adminjs';
 
-import database from '../db/config.js';
+import database from '../db/config.ts';
 
-import componentLoader from './component-loader.js';
-import { adminJsResources } from './resources/index.js';
+import componentLoader from './component-loader.ts';
+import { adminJsResources } from './resources/index.ts';
 
 const options: AdminJSOptions = {
   componentLoader,

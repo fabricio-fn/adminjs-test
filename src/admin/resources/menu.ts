@@ -3,7 +3,7 @@ import path from 'path';
 import uploadFeature from '@adminjs/upload';
 import { FeatureType, ResourceOptions } from 'adminjs';
 
-import componentLoader from '../component-loader.js';
+import componentLoader from '../component-loader.ts';
 
 const __filename = new URL(import.meta.url).pathname;
 const __dirname = path.dirname(__filename);

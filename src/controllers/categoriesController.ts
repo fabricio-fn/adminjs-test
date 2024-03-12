@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 
-import { categoryService } from '../db/services/categoryService.js';
-import { Category } from '../db/models/Category.js';
+import { categoryService } from '../db/services/categoryService.ts';
+import { Category } from '../db/models/Category.ts';
 
 export const categoriesController = {
   index: async (req: Request, res: Response) => {

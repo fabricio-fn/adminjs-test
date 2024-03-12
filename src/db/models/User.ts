@@ -1,7 +1,7 @@
 import bcrypt from 'bcrypt';
 import { DataTypes, Model, Optional } from 'sequelize';
 
-import sequelize from '../config.js';
+import sequelize from '../config.ts';
 
 type CheckPasswordCallback = (err?: Error, isSame?: boolean) => void;
 

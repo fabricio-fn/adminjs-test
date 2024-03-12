@@ -1,12 +1,12 @@
 import { ResourceWithOptions } from 'adminjs';
 
-import { Menu } from '../../db/models/Menu.js';
-import { Category } from '../../db/models/Category.js';
-import { User } from '../../db/models/User.js';
+import { Menu } from '../../db/models/Menu.ts';
+import { Category } from '../../db/models/Category.ts';
+import { User } from '../../db/models/User.ts';
 
-import { categoryResourceOptions } from './category.js';
-import { menuResourceFeatures, menuResourceOptions } from './menu.js';
-import { userResourceOptions } from './user.js';
+import { categoryResourceOptions } from './category.ts';
+import { menuResourceFeatures, menuResourceOptions } from './menu.ts';
+import { userResourceOptions } from './user.ts';
 
 export const adminJsResources: ResourceWithOptions[] = [
   {

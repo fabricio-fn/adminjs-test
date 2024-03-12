@@ -3,10 +3,10 @@ import AdminJS from 'adminjs';
 import { buildAuthenticatedRouter } from '@adminjs/express';
 import cors from 'cors';
 
-import provider from './admin/auth-provider.js';
-import options from './admin/options.js';
-import initializeDb from './db/index.js';
-import { routes } from './routes.js';
+import provider from './admin/auth-provider.ts';
+import options from './admin/options.ts';
+import initializeDb from './db/index.ts';
+import { routes } from './routes.ts';
 
 const port = process.env.PORT || 3000;
 

@@ -1,10 +1,10 @@
 import express from 'express';
 
-import { categoriesController } from './controllers/categoriesController.js';
-import { menuController } from './controllers/menuController.js';
-import { authController } from './controllers/authController.js';
-import { usersController } from './controllers/usersController.js';
-import { ensureAuth } from './middlewares/auth.js';
+import { categoriesController } from './controllers/categoriesController.ts';
+import { menuController } from './controllers/menuController.ts';
+import { authController } from './controllers/authController.ts';
+import { usersController } from './controllers/usersController.ts';
+import { ensureAuth } from './middlewares/auth.ts';
 
 const routes = express.Router();
 

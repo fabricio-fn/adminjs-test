@@ -1,7 +1,7 @@
 import { Response } from 'express';
 
-import { userService } from '../db/services/userService.js';
-import { RequestWithUser } from '../middlewares/auth.js';
+import { userService } from '../db/services/userService.ts';
+import { RequestWithUser } from '../middlewares/auth.ts';
 
 export const usersController = {
   show: async (req: RequestWithUser, res: Response) => {

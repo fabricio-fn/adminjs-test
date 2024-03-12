@@ -1,4 +1,4 @@
-import { Category, Menu } from '../models/index.js';
+import { Category, Menu } from '../models/index.ts';
 
 export const menuService = {
   findByI: async (id: string) => {

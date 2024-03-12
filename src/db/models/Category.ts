@@ -1,6 +1,6 @@
 import { DataTypes, Model, Optional } from 'sequelize';
 
-import sequelize from '../config.js';
+import sequelize from '../config.ts';
 
 export interface CategoryAttributes {
   id: number;

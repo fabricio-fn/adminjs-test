@@ -1,7 +1,7 @@
 import { Database, Resource } from '@adminjs/sequelize';
 import AdminJS from 'adminjs';
 
-import sequelize from './config.js';
+import sequelize from './config.ts';
 
 AdminJS.registerAdapter({
   Database,
